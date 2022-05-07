@@ -1,0 +1,102 @@
+@import '_vars.scss';
+// FLEX
+.flex {
+    display: flex;
+}
+.f-jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+.f-center {
+    display: flex;
+    align-items: center;
+}
+.f-jcsb-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-dc{
+    display: flex;
+    flex-direction: column;
+}
+.f-dc-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-dc-center-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// IMAGE
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+.img-contain{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+}
+
+// BTN
+.btn{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid $accent;
+    background: $accent;
+    transition: $anim-default;
+    box-shadow: 0px 72px 370px rgba(204, 244, 86, 0.15), 
+                0px 36.0352px 185.181px rgba(204, 244, 86, 0.11405), 
+                0px 21.7059px 111.544px rgba(204, 244, 86, 0.0977383), 
+                0px 13.9103px 71.4834px rgba(204, 244, 86, 0.0856342),
+                0px 9.01552px 46.3297px rgba(204, 244, 86, 0.075), 
+                0px 5.67517px 29.164px rgba(204, 244, 86, 0.0643658), 
+                0px 3.26074px 16.7566px rgba(204, 244, 86, 0.0522617), 
+                0px 1.43513px 7.375px rgba(204, 244, 86, 0.0359501);
+    span {
+        transition: $anim-default;
+        display: inline-block;
+        color: #000;
+    }
+    &:hover {
+        background: transparent;
+        box-shadow: unset;
+        span {
+            color: #fff;
+        }
+    }
+}
+
+//TITLE
+.title{
+    font-size: 80px;
+    line-height: 130%;
+    text-transform: uppercase;
+    font-family: 'Miratrix Regular';
+    color: #FFFFFF;
+    font-weight: normal;
+    span {
+        font-family: 'Miratrix Regular';
+        color: $accent;
+        font-size: 80px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Noah Regular';
+  src: url("../fonts/Noah-Regular.eot");
+  src: local("Noah Regular"), local("Noah-Regular"), url("../fonts/Noah-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Noah-Regular.woff") format("woff"), url("../fonts/Noah-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noah Bold';
+  src: url("../fonts/Noah-Bold.eot");
+  src: local("Noah Bold"), local("Noah-Bold"), url("../fonts/Noah-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Noah-Bold.woff") format("woff"), url("../fonts/Noah-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miratrix Regular';
+  src: url("../fonts/Miratrix-Regular.ttf");
+  src: local("Miratrix Regular"), local("Miratrix-Regular"), url("../fonts/Miratrix-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/*# sourceMappingURL=fonts.css.map */
