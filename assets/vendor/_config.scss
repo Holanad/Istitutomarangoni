@@ -100,3 +100,103 @@
         text-transform: uppercase;
     }
 }
+
+// FILTER SELECT
+.filter {
+    &-inner {
+        position: relative;
+    }
+    &__text {
+        font-size: 18px;
+        color: #fff;
+        margin-right: 20px;
+    }
+    &-select {
+        position: absolute;
+        left: 0;
+        top: 47px;
+        border: 1px solid $accent;
+        border-radius: 16px;
+        padding: 11px 20px;
+        min-width: max-content;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: $anim-default;
+        background: #000;
+        &__item {
+            font-family: 'Noah Regular';
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+    &__btn {
+        border: 1px solid $accent;
+        border-radius: 60px;
+        padding: 11px 20px;
+        span {
+            font-size: 18px;
+        }
+        svg {
+            margin-left: 20px;
+        }
+    }
+}
+// form together select
+.select-form {
+    &-elem {
+        width: 100%;
+        position: relative;
+        &::after {
+            content: '▼';
+            position: absolute;
+            font-size: 10px;
+            right: 20px;
+            top: 26px;
+            color: #000;
+            transition: $anim-default;
+        }
+        &.active {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+        &__select {
+            width: 100%;
+            color: #000;
+            font-size: 14px;
+            padding: 20px 22px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    }
+    &__btn {
+        box-shadow: none;
+        background: #000;
+        border: unset;
+        span {
+            color: #fff;
+            max-width: 76px;
+        }
+        &:hover {
+            background: $accent;
+            box-shadow: 0px 72px 370px rgba(204, 244, 86, 0.15), 
+                        0px 36.0352px 185.181px rgba(204, 244, 86, 0.11405), 
+                        0px 21.7059px 111.544px rgba(204, 244, 86, 0.0977383), 
+                        0px 13.9103px 71.4834px rgba(204, 244, 86, 0.0856342),
+                        0px 9.01552px 46.3297px rgba(204, 244, 86, 0.075), 
+                        0px 5.67517px 29.164px rgba(204, 244, 86, 0.0643658), 
+                        0px 3.26074px 16.7566px rgba(204, 244, 86, 0.0522617), 
+                        0px 1.43513px 7.375px rgba(204, 244, 86, 0.0359501);
+        }
+    }
+}

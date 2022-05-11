@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Программы</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <base href="">
+    <link rel="canonical" href="/">
+    <!-- page description -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="Copyright" content="">
+    <!-- social networks -->
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <!-- styles files -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="bower_components/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="header-top f-jcsb-center">
+                        <div class="header-main f-jcsb-center">
+                            <a href="" class="header-logo">
+                                <img src="assets/img/logo.png" alt="" class="img-contain">
+                            </a>
+                            <div class="header-social f-center">
+                                <a href="" class="header-social__item f-center-center">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.1299 5.18844L3.85373 9.26923C3.51985 9.38052 3.55694 9.8628 3.89083 9.97409L6.48769 10.7902L7.52643 14.0549C7.60063 14.3146 7.93451 14.3888 8.12 14.2033L9.64102 12.7935L12.5347 14.9081C12.7573 15.0565 13.054 14.9452 13.1282 14.6855L15.1315 6.0788C15.2428 5.44813 14.6864 4.96586 14.1299 5.18844V5.18844ZM8.12 11.4209L7.78612 13.35L7.04416 10.679L14.2783 5.9304L8.12 11.4209Z" fill="white"/>
+                                    </svg>                                        
+                                </a>
+                                <a href="" class="header-social__item f-center-center">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.66137 5.28362C9.67373 3.79351 8.40467 2.42758 6.83264 2.23849C6.79867 2.23425 6.76483 2.22909 6.73114 2.22303C6.65211 2.2079 6.57198 2.19928 6.49155 2.19727C6.169 2.19727 6.08295 2.42398 6.06028 2.55846C6.03813 2.68985 6.05925 2.80062 6.12263 2.88667C6.22928 3.03146 6.41735 3.05722 6.56832 3.07783C6.61211 3.08401 6.65385 3.08968 6.68889 3.09741C8.1017 3.41326 8.57728 3.90944 8.80966 5.31041C8.81532 5.34442 8.8179 5.38667 8.82099 5.43149C8.8313 5.59895 8.85191 5.94726 9.22649 5.94726C9.25741 5.94726 9.29142 5.94468 9.32645 5.93953C9.67476 5.88646 9.66394 5.56803 9.65879 5.415C9.65724 5.37172 9.6557 5.33102 9.65982 5.30371C9.66064 5.29687 9.66098 5.28999 9.66085 5.2831L9.66137 5.28362Z" fill="white"/>
+                                        <path d="M6.39987 1.69158C6.44212 1.69467 6.48128 1.69777 6.51426 1.7024C8.83443 2.05947 9.90151 3.1585 10.1968 5.49671C10.2019 5.53638 10.2029 5.58482 10.2034 5.63582C10.2065 5.81874 10.2127 6.19899 10.6208 6.20672H10.6332C10.7615 6.20672 10.863 6.16808 10.9361 6.09182C11.0629 5.9594 11.0546 5.76206 11.0469 5.60336C11.0454 5.5642 11.0438 5.52762 11.0438 5.49516C11.0737 3.1044 9.00343 0.93571 6.61473 0.855331C6.60443 0.855331 6.59515 0.855331 6.58588 0.856877C6.57648 0.858063 6.56701 0.858579 6.55754 0.858423C6.53332 0.858423 6.50447 0.856362 6.47304 0.854301C6.43594 0.851724 6.39317 0.848633 6.34938 0.848633C5.96912 0.848633 5.89699 1.11914 5.88771 1.28041C5.86659 1.65294 6.22675 1.67922 6.39987 1.69158V1.69158ZM10.0849 8.51865C10.0352 8.48081 9.98587 8.44233 9.93707 8.40323C9.68356 8.1992 9.41409 8.01164 9.15388 7.82976L8.99158 7.71641C8.6577 7.48197 8.35782 7.3681 8.07443 7.3681C7.69212 7.3681 7.35927 7.57935 7.08412 7.99516C6.96252 8.17962 6.81465 8.26927 6.63276 8.26927C6.50644 8.26485 6.38247 8.23377 6.269 8.17807C5.19212 7.68961 4.42234 6.94044 3.98232 5.95167C3.76952 5.47352 3.83856 5.16128 4.21263 4.90675C4.42543 4.76248 4.82063 4.49403 4.79332 3.97929C4.76137 3.39552 3.47273 1.638 2.92966 1.43859C2.6975 1.35391 2.44301 1.35318 2.21037 1.43653C1.5864 1.64624 1.13916 2.01516 0.91503 2.50207C0.698625 2.97301 0.70893 3.52587 0.942853 4.10089C1.62041 5.76361 2.57259 7.21352 3.77364 8.40993C4.94893 9.5811 6.39369 10.54 8.06722 11.2608C8.21819 11.3257 8.37637 11.3613 8.4923 11.387C8.53146 11.3958 8.56547 11.4035 8.5902 11.4102C8.60381 11.4139 8.61784 11.4158 8.63194 11.4159H8.64533C9.43264 11.4159 10.3781 10.6966 10.6682 9.87685C10.9227 9.15859 10.458 8.80358 10.0849 8.51865V8.51865ZM6.74818 3.59131C6.6137 3.5944 6.33289 3.60162 6.23448 3.88706C6.1881 4.02103 6.19377 4.13645 6.25096 4.23177C6.33443 4.37088 6.49468 4.41417 6.63998 4.43787C7.16811 4.52237 7.43965 4.814 7.49375 5.35656C7.519 5.60903 7.68954 5.78576 7.90749 5.78576C7.92403 5.78574 7.94055 5.78471 7.95696 5.78267C8.21974 5.75176 8.347 5.55854 8.33567 5.20868C8.33979 4.84388 8.14915 4.42962 7.82402 4.09986C7.49838 3.76907 7.10576 3.58255 6.74818 3.59131V3.59131Z" fill="white"/>
+                                    </svg>                                                                                                                
+                                </a>
+                                <a href="" class="header-social__item f-center-center">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5309 16.7503C23.0744 16.2931 22.5314 15.9306 21.9332 15.6838C21.335 15.437 20.6936 15.3108 20.0461 15.3125C17.3318 15.3125 15.1203 17.5119 15.1203 20.214C15.1183 21.0744 15.345 21.92 15.7774 22.6649L15.0791 25.2053L17.6908 24.5225C18.413 24.9141 19.2221 25.1197 20.0445 25.1204H20.0465C22.7613 25.1204 24.9703 22.9214 24.9719 20.2173C24.9719 18.9079 24.46 17.6769 23.5309 16.7499V16.7503ZM20.0461 24.2919H20.0445C19.3114 24.2919 18.5918 24.0959 17.9608 23.7244L17.8112 23.6362L16.2605 24.0404L16.6743 22.5365L16.5779 22.3826C16.1676 21.7331 15.9503 20.9812 15.9513 20.214C15.9513 17.9686 17.7885 16.1414 20.0478 16.1414C20.5854 16.1401 21.1181 16.2449 21.6147 16.4499C22.1114 16.6548 22.5624 16.9558 22.9414 17.3355C23.3223 17.7133 23.6243 18.1625 23.8298 18.6571C24.0353 19.1517 24.1404 19.682 24.1389 20.2173C24.1389 22.4647 22.3017 24.2919 20.0457 24.2919H20.0461ZM22.2905 21.2398C22.1681 21.1791 21.5626 20.8828 21.4501 20.8426C21.3375 20.8008 21.2551 20.7815 21.1731 20.9033C21.0906 21.0264 20.8557 21.3026 20.7835 21.3843C20.7126 21.4643 20.6401 21.4758 20.5177 21.4146C20.394 21.3539 19.9979 21.2238 19.5276 20.8057C19.1619 20.4815 18.9142 20.0794 18.8433 19.9575C18.7708 19.8344 18.8351 19.7688 18.8965 19.7072C18.9525 19.6531 19.0201 19.5648 19.0816 19.4926C19.1426 19.4224 19.164 19.3712 19.2052 19.2891C19.2456 19.2074 19.225 19.1352 19.1941 19.0745C19.1636 19.0137 18.9175 18.4093 18.8145 18.1639C18.7143 17.9251 18.6129 17.9588 18.5375 17.9543C18.4666 17.951 18.3845 17.951 18.3025 17.951C18.2201 17.951 18.0865 17.9813 17.9736 18.1049C17.861 18.2267 17.5436 18.5234 17.5436 19.1258C17.5436 19.7286 17.9847 20.3116 18.0465 20.3937C18.1075 20.4737 18.9142 21.7109 20.1488 22.2419C20.3775 22.3403 20.6114 22.4265 20.8495 22.5C21.1442 22.5927 21.413 22.58 21.6257 22.5492C21.8623 22.5143 22.3532 22.2529 22.4563 21.9661C22.5581 21.6809 22.5581 21.4356 22.5271 21.3843C22.4966 21.333 22.4146 21.3022 22.2905 21.2398V21.2398Z" fill="white"/>
+                                    </svg>                                                                              
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="header-phone flex">
+                            <li class="header-phone-item f-dc">
+                                <a href="tel:+74952552979" class="header-phone-item__link">
+                                    <span>Москва</span>
+                                    (495) 255 2979
+                                </a>
+                                <a href="+79771771112" class="header-phone-item__link">
+                                    +7 (977) 177 11 12
+                                </a>
+                            </li>
+                            <li class="header-phone-item f-dc">
+                                <a href="tel:+78126122679" class="header-phone-item__link">
+                                    <span>Санкт-Петербург</span>
+                                    (812) 612 2679
+                                </a>
+                                <a href="+79999268446" class="header-phone-item__link">
+                                    +7 (999) 926 84 46
+                                </a>
+                            </li>
+                            <li class="header-phone-item f-dc">
+                                <a href="tel:+77272245201" class="header-phone-item__link">
+                                    <span>Алматы</span>
+                                    (727) 224 5201
+                                </a>
+                                <a href="+77777630771" class="header-phone-item__link">
+                                    +7 (777) 763 07 71
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-bottom f-jcsb-center">
+                        <nav class="header-nav header-nav-left">
+                            <ul class="header-nav-list f-center">
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Программы
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Направления
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        города обучения
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="header-nav header-nav-right">
+                            <ul class="header-nav-list f-center">
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Блог
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Как поступить
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Стоимость
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="" class="header-nav-item__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="breadcrumb">
+                <div class="container">
+                    <div class="breadcrumb-wrapper">
+                        <a href="" class="breadcrumb-main">Главная</a>
+                        <a href="" class="breadcrumb-next">Программы</a>
+                    </div>
+                </div>
+            </div>
+            <!-- City Single -->
+            <section class="city-single">
+                <div class="container">
+                    <div class="city-single-wrapper">
+                        <h1 class="city-single__title title">
+                            институт маргони
+                            в <span>милане</span>
+                        </h1>
+                        <div class="city-single-block">
+                            <a href="https://www.youtube.com/watch?v=m8F8v2t5VcQ" data-fancybox="city-single-video" class="city-single-video">
+                                <div class="city-single-image">
+                                    <img src="assets/img/city/single/img.jpg" alt="" class="img-cover">
+                                </div>
+                                <svg class="city-single-video__icon" width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.5" cx="68" cy="68" r="67.5" fill="#CC0033" stroke="#CC0033"/>
+                                    <path d="M57.25 50.7465L88 68.5L57.25 86.2535L57.25 50.7465Z" fill="white" stroke="white"/>
+                                </svg> 
+                            </a>
+                            <button class="city-single-block__btn btn">
+                                <span>
+                                    Подобрать <br> обучение
+                                </span>
+                            </button>
+                        </div>
+                        <p class="city-single__descr">
+                            Институт Marangoni предлагает 12 программ обучения дизайну одежды 
+                            за рубежом: в Милане, Лондоне, Париже и Флоренции. Каждый абитуриент 
+                            найдет для себя оптимальный вариант с учетом целей, предыдущего 
+                            образования и опыта:
+                            <br><br>
+                            <i class="rhomb"></i>Бакалавриат
+                            <br><br>
+                            <i class="rhomb"></i>Магистратура
+                            <br><br>
+                            <i class="rhomb"></i>Интенсивы
+                            <br><br>
+                            <i class="rhomb"></i>Подготовительные и краткосрочные курсы.
+                            <br><br>
+                            Все теоретические и практические занятия проводят преподаватели-практики, которые много лет посвятили работе с модными брендами или стали основателями собственных компаний. Студенты изучают техники кроя, историю моды и искусства, основы ведения бизнеса в fashion-мире, учатся прогнозировать тренды и создавать коллекции с индивидуальным стилем, но отвечающие потребностям современного клиента.
+                            <br><br>
+                            Обучение дизайну одежды за границей – это правильное начало карьеры в конкурентном мире моды.
+                        </p>
+                    </div>
+                </div>
+                <div class="city-single-elem city-single-elem-one bg-elem">
+                    <img src="assets/img/background/directions/single/elem-one.svg" alt="">
+                </div>
+                <div class="city-single-elem city-single-elem-two bg-elem">
+                    <img src="assets/img/background/directions/single/elem-two.svg" alt="">
+                </div>
+            </section>
+            <!-- Price -->
+            <section class="price single-page">
+                <div class="container">
+                    <div class="price-wrapper">
+                        <h2 class="price__title title">
+                            Стоимость <br>
+                            обучения
+                                   <span>в istituto marangoni</span>
+                        </h2>
+                        <ul class="price-list">
+                            <li class="price-item">
+                                <div class="price-item-head f-center open">
+                                    <p class="price-item-head__title">
+                                        Милан
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        бакалавриат
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        магистратура
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        одногодичные/интенсивные курсы
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        foundation подготовительный курс
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        краткосрочные курсы
+                                    </p>
+                                    <span class="price-item-head__icon"></span>
+                                </div>
+                                <ul class="price-item-inner">
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн одежды
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            стайлинг
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            бизнес в моде
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн интерьера
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            продакт дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            визуальный дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            цифровой дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн украшений
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="price-item">
+                                <div class="price-item-head f-center">
+                                    <p class="price-item-head__title">
+                                        Лондон
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        бакалавриат
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        магистратура
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        одногодичные/интенсивные курсы
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        foundation подготовительный курс
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        краткосрочные курсы
+                                    </p>
+                                    <span class="price-item-head__icon"></span>
+                                </div>
+                                <ul class="price-item-inner">
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн одежды
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            стайлинг
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            бизнес в моде
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн интерьера
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            продакт дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            визуальный дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            цифровой дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн украшений
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="price-item">
+                                <div class="price-item-head f-center">
+                                    <p class="price-item-head__title">
+                                        Париж
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        бакалавриат
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        магистратура
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        одногодичные/интенсивные курсы
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        foundation подготовительный курс
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        краткосрочные курсы
+                                    </p>
+                                    <span class="price-item-head__icon"></span>
+                                </div>
+                                <ul class="price-item-inner">
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн одежды
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            стайлинг
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            бизнес в моде
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн интерьера
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            продакт дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            визуальный дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            цифровой дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн украшений
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="price-item">
+                                <div class="price-item-head f-center">
+                                    <p class="price-item-head__title">
+                                        Флоренция
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        бакалавриат
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        магистратура
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        одногодичные/интенсивные курсы
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        foundation подготовительный курс
+                                    </p>
+                                    <p class="price-item-head__col">
+                                        краткосрочные курсы
+                                    </p>
+                                    <span class="price-item-head__icon"></span>
+                                </div>
+                                <ul class="price-item-inner">
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн одежды
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            стайлинг
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            бизнес в моде
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн интерьера
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            продакт дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            визуальный дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            цифровой дизайн
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                    <li class="price-item-info f-center">
+                                        <p class="price-item-info__title">
+                                            дизайн украшений
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            27 600€
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            36 300€		
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            28 230€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            17 500€	
+                                        </p>
+                                        <p class="price-item-info__col f-center-center">
+                                            от 1 900€
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Tablet -->
+            <div class="tablet f-center single-page">
+                <div class="tablet-wrapper f-center">
+                    <p class="tablet__text">
+                        ДО 1 апреля всех новых учеников ждёт
+                    </p>
+                </div>
+            </div>
+            <!-- Available -->
+            <section class="available">
+                <div class="container">
+                    <div class="available-wrapper">
+                        <h2 class="available__title title">
+                            <span>Доступные</span> курсы
+                        </h2>
+                        <form action="" class="available-form select-form f-jcsb-center">
+                            <div class="available-form-elem select-form-elem">
+                                <select name="" id="" class="available-form__select  select-form-elem__select">
+                                    <option value="Программа">Программа</option>
+                                </select>
+                            </div>
+                            <div class="available-form-elem select-form-elem">
+                                <select name="" id="" class="available-form__select  select-form-elem__select">
+                                    <option value="Город">Город</option>
+                                </select>
+                            </div>
+                            <div class="available-form-elem select-form-elem">
+                                <select name="" id="" class="available-form__select  select-form-elem__select">
+                                    <option value="Программа">Образование</option>
+                                </select>
+                            </div>
+                            <button class="available-form__btn select-form__btn btn">
+                                <span>Подобрать 
+                                    обучение</span>
+                            </button>
+                        </form>
+                        <div class="available-list">
+                            <ul class="available-list-inner">
+                                <li class="available-item flex">
+                                    <div class="available-item-image">
+                                        <img src="assets/img/directions/design.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="available-item-info">
+                                        <span class="available-item-info__chapter">
+                                            Бизнес в индустрии моды
+                                        </span>
+                                        <h2 class="available-item-info__title">
+                                            One-year paris couture evolution – интенсивный курс по эволюции парижской высокой моды
+                                        </h2>
+                                        <p class="available-item-info__descr">
+                                            Haute Couture – единственное направление в моде, где для создания 
+                                            уникального видения объединяются исследования, мастерство и экстремальный 
+                                            люкс. Программа Paris Couture Evolution готовит профессионалов, способных 
+                                            создавать выдающиеся модные творения посредством изучения традиционных материалов 
+                                            от-кутюр и развития индивидуальной эстетики. Обучение Интенсивный курс обучения 
+                                            эволюции ...
+                                        </p>
+                                        <a href="" class="available-item-info__link">
+                                            Читать дальше
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="available-item flex">
+                                    <div class="available-item-image">
+                                        <img src="assets/img/directions/design.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="available-item-info">
+                                        <span class="available-item-info__chapter">
+                                            Бизнес в индустрии моды
+                                        </span>
+                                        <h2 class="available-item-info__title">
+                                            One-year paris couture evolution – интенсивный курс по эволюции парижской высокой моды
+                                        </h2>
+                                        <p class="available-item-info__descr">
+                                            Haute Couture – единственное направление в моде, где для создания 
+                                            уникального видения объединяются исследования, мастерство и экстремальный 
+                                            люкс. Программа Paris Couture Evolution готовит профессионалов, способных 
+                                            создавать выдающиеся модные творения посредством изучения традиционных материалов 
+                                            от-кутюр и развития индивидуальной эстетики. Обучение Интенсивный курс обучения 
+                                            эволюции ...
+                                        </p>
+                                        <a href="" class="available-item-info__link">
+                                            Читать дальше
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="available-item flex">
+                                    <div class="available-item-image">
+                                        <img src="assets/img/directions/design.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="available-item-info">
+                                        <span class="available-item-info__chapter">
+                                            Бизнес в индустрии моды
+                                        </span>
+                                        <h2 class="available-item-info__title">
+                                            One-year paris couture evolution – интенсивный курс по эволюции парижской высокой моды
+                                        </h2>
+                                        <p class="available-item-info__descr">
+                                            Haute Couture – единственное направление в моде, где для создания 
+                                            уникального видения объединяются исследования, мастерство и экстремальный 
+                                            люкс. Программа Paris Couture Evolution готовит профессионалов, способных 
+                                            создавать выдающиеся модные творения посредством изучения традиционных материалов 
+                                            от-кутюр и развития индивидуальной эстетики. Обучение Интенсивный курс обучения 
+                                            эволюции ...
+                                        </p>
+                                        <a href="" class="available-item-info__link">
+                                            Читать дальше
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="available-list__btn btn f-center-center">
+                                <span>Смотреть ещё</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="available-elem available-elem-three bg-elem">
+                    <img src="assets/img/background/directions/single/elem-three.svg" alt="">
+                </div>
+            </section>
+            <!-- Recall -->
+      <!--      <section class="recall single-page" style="padding: 0;">
+                <div class="container">
+                    <div class="recall-head f-jcsb-center">
+                        <h2 class="recall__title title">
+                            Отзывы
+                        </h2>
+                        <div class="recall-slider-manager f-center">
+                            <div class="recall-slider-manager-left f-center">
+                                <span>01</span>
+                                <div class="swiper-scrollbar"></div>
+                                <span class="recall-item-count">00</span>
+                            </div>
+                            <div class="recall-slider-manager-right">
+                                <button class="recall-slider-manager__prev">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="24.5" transform="rotate(-180 25 25)" stroke="#9CBE37"/>
+                                        <path d="M17.2142 23.9707C17.0189 24.1659 17.0189 24.4825 17.2142 24.6778L20.3962 27.8598C20.5914 28.055 20.908 28.055 21.1033 27.8598C21.2985 27.6645 21.2985 27.3479 21.1033 27.1526L18.2749 24.3242L21.1033 21.4958C21.2985 21.3005 21.2985 20.9839 21.1033 20.7887C20.908 20.5934 20.5914 20.5934 20.3962 20.7887L17.2142 23.9707ZM32.4326 23.8242L17.5678 23.8242V24.8242H32.4326V23.8242Z" fill="#9CBE37"/>
+                                    </svg> 
+                                </button>
+                                <button class="recall-slider-manager__next">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="24.5" stroke="#9CBE37"/>
+                                        <path d="M32.7858 26.0293C32.9811 25.8341 32.9811 25.5175 32.7858 25.3222L29.6038 22.1402C29.4086 21.945 29.092 21.945 28.8967 22.1402C28.7015 22.3355 28.7015 22.6521 28.8967 22.8474L31.7251 25.6758L28.8967 28.5042C28.7015 28.6995 28.7015 29.0161 28.8967 29.2113C29.092 29.4066 29.4086 29.4066 29.6038 29.2113L32.7858 26.0293ZM17.5674 26.1758L32.4322 26.1758V25.1758L17.5674 25.1758V26.1758Z" fill="#9CBE37"/>
+                                    </svg> 
+                                </button>                                                                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recall-slider indent">
+                    <div class="recall-slider-wrapper swiper-wrapper indent-wrapper">
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+                        <!-- Recall -->
+            <section class="recall">
+                <div class="container">
+                    <div class="recall-head f-jcsb-center">
+                        <h2 class="recall__title title">
+                            Отзывы
+                        </h2>
+                        <div class="recall-slider-manager f-center">
+                            <div class="recall-slider-manager-left f-center">
+                                <span>01</span>
+                                <div class="swiper-scrollbar"></div>
+                                <span class="recall-item-count">00</span>
+                            </div>
+                            <div class="recall-slider-manager-right">
+                                <button class="recall-slider-manager__prev">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="24.5" transform="rotate(-180 25 25)" stroke="#9CBE37"/>
+                                        <path d="M17.2142 23.9707C17.0189 24.1659 17.0189 24.4825 17.2142 24.6778L20.3962 27.8598C20.5914 28.055 20.908 28.055 21.1033 27.8598C21.2985 27.6645 21.2985 27.3479 21.1033 27.1526L18.2749 24.3242L21.1033 21.4958C21.2985 21.3005 21.2985 20.9839 21.1033 20.7887C20.908 20.5934 20.5914 20.5934 20.3962 20.7887L17.2142 23.9707ZM32.4326 23.8242L17.5678 23.8242V24.8242H32.4326V23.8242Z" fill="#9CBE37"/>
+                                    </svg> 
+                                </button>
+                                <button class="recall-slider-manager__next">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="24.5" stroke="#9CBE37"/>
+                                        <path d="M32.7858 26.0293C32.9811 25.8341 32.9811 25.5175 32.7858 25.3222L29.6038 22.1402C29.4086 21.945 29.092 21.945 28.8967 22.1402C28.7015 22.3355 28.7015 22.6521 28.8967 22.8474L31.7251 25.6758L28.8967 28.5042C28.7015 28.6995 28.7015 29.0161 28.8967 29.2113C29.092 29.4066 29.4086 29.4066 29.6038 29.2113L32.7858 26.0293ZM17.5674 26.1758L32.4322 26.1758V25.1758L17.5674 25.1758V26.1758Z" fill="#9CBE37"/>
+                                    </svg> 
+                                </button>                                                                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recall-slider indent">
+                    <div class="recall-slider-wrapper swiper-wrapper indent-wrapper">
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recall-item swiper-slide">
+                            <div class="recall-item-image">
+                                <img src="assets/img/recall/woomen.jpg" alt="" class="img-cover">
+                            </div>
+                            <div class="recall-item-info f-dc">
+                                <div class="recall-item-estimation f-center">
+                                    <span class="recall-item-estimation__text">
+                                        Оценка
+                                    </span>
+                                    <div class="recall-item-estimation__stars">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg> 
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.21468 0.878116C6.30449 0.601723 6.69551 0.601722 6.78532 0.878115L7.89199 4.28409C7.93215 4.4077 8.04734 4.49139 8.1773 4.49139H11.7586C12.0492 4.49139 12.17 4.86327 11.9349 5.03409L9.0376 7.13911C8.93245 7.2155 8.88846 7.35091 8.92862 7.47452L10.0353 10.8805C10.1251 11.1569 9.80875 11.3867 9.57364 11.2159L6.67634 9.1109C6.57119 9.0345 6.42881 9.0345 6.32366 9.1109L3.42637 11.2159C3.19125 11.3867 2.87491 11.1569 2.96471 10.8805L4.07138 7.47452C4.11154 7.35091 4.06755 7.2155 3.9624 7.13911L1.0651 5.03409C0.829989 4.86327 0.950821 4.49139 1.24144 4.49139H4.8227C4.95266 4.49139 5.06785 4.4077 5.10801 4.28409L6.21468 0.878116Z" fill="#9CBE37"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <p class="recall-item__title">
+                                    Интервью со студенткой Марангони из России: впечатления об обучении на программе Бакалавриата по модному бизнесу 
+                                </p>
+                                <p class="recall-item__descr">
+                                    Istituto Marangoni – ведущий фэшн-вуз в мире, предлагающий конкурентоспособное образование в сфере моды, бизнеса и дизайна.
+                                </p>
+                                <a href="" class="recall-item__more">
+                                    ЧИТАТЬ ПОЛНОСТЬю
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- querstion -->
+            <section class="question single-page">
+                <div class="container">
+                    <div class="question-wrapper f-jcsb">
+                        <div class="question-image">
+                            <img src="assets/img/question/img.png" alt="" class="img-cover">
+                        </div>
+                        <div class="question-block">
+                            <h2 class="question__title title">
+                                оСТАЛИСЬ 
+                                <span>вОПРОСЫ?</span>
+                            </h2>
+                            <form action="" class="question-form f-dc">
+                                <div class="question-form-block flex">
+                                    <div class="question-form-elem">
+                                        <input type="text" name="name" class="question-form-elem__input" placeholder="Имя">
+                                    </div>
+                                    <div class="question-form-elem">
+                                        <input type="tel" name="phone" class="question-form-elem__input" placeholder="Телефон">
+                                    </div>
+                                    <div class="question-form-elem">
+                                        <input type="email" name="email" class="question-form-elem__input" placeholder="Email">
+                                    </div>
+                                </div>
+                                <label class="question-form-checkbox f-center">
+                                    <input type="checkbox" name="checkbox" class="question-form-checkbox__input">
+                                    <span></span>
+                                    Я даю согласие на обработку моих персональных данных
+                                </label>
+                                <button class="question-form__btn btn">
+                                    <span>Отправить</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-head f-jcsb-center">
+                        <a href="" class="footer-logo">
+                            <img src="assets/img/logo.png" alt="" class="img-contain">
+                        </a>
+                        <button class="footer-arrow f-center-center">
+                            <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.4142 0.585785C15.6332 -0.195263 14.3668 -0.195263 13.5858 0.585785L0.857863 13.3137C0.0768145 14.0948 0.0768145 15.3611 0.857863 16.1421C1.63891 16.9232 2.90524 16.9232 3.68629 16.1421L15 4.82843L26.3137 16.1421C27.0948 16.9232 28.3611 16.9232 29.1421 16.1421C29.9232 15.3611 29.9232 14.0948 29.1421 13.3137L16.4142 0.585785ZM17 40L17 2L13 2L13 40L17 40Z" fill="black"/>
+                            </svg>                            
+                        </button>
+                    </div>
+                    <div class="footer-body f-jcsb">
+                        <div class="footer-info">
+                            <div class="footer-search">
+                                <p class="footer-title">
+                                    поиск 
+                                </p>
+                                <form action="" class="footer-search-inner f-center">
+                                    <div class="footer-search-elem">
+                                        <input placeholder="Например, учеба в Милане" name="search" type="search" class="footer-search-elem__input">
+                                    </div>
+                                    <button class="footer-search__btn">
+                                        <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.2531 4.35355C20.4484 4.15829 20.4484 3.84171 20.2531 3.64645L17.0711 0.464466C16.8759 0.269204 16.5593 0.269204 16.364 0.464466C16.1688 0.659728 16.1688 0.976311 16.364 1.17157L19.1925 4L16.364 6.82843C16.1688 7.02369 16.1688 7.34027 16.364 7.53553C16.5593 7.7308 16.8759 7.7308 17.0711 7.53553L20.2531 4.35355ZM0.100586 4.5L19.8996 4.5V3.5L0.100586 3.5L0.100586 4.5Z" fill="#9CBE37"/>
+                                        </svg> 
+                                    </button>                                   
+                                </form>
+                            </div>
+                            <ul class="footer-phone">
+                                <li class="footer-phone-item f-dc">
+                                    <a href="tel:+74952552979" class="footer-phone-item__link">
+                                        <span>Москва</span>
+                                        (495) 255 2979
+                                    </a>
+                                    <a href="+79771771112" class="footer-phone-item__link">
+                                        +7 (977) 177 11 12
+                                    </a>
+                                </li>
+                                <li class="footer-phone-item f-dc">
+                                    <a href="tel:+78126122679" class="footer-phone-item__link">
+                                        <span>Санкт-Петербург</span>
+                                        (812) 612 2679
+                                    </a>
+                                    <a href="+79999268446" class="footer-phone-item__link">
+                                        +7 (999) 926 84 46
+                                    </a>
+                                </li>
+                                <li class="footer-phone-item f-dc">
+                                    <a href="tel:+77272245201" class="footer-phone-item__link">
+                                        <span>Алматы</span>
+                                        (727) 224 5201
+                                    </a>
+                                    <a href="+77777630771" class="footer-phone-item__link">
+                                        +7 (777) 763 07 71
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-directions">
+                            <p class="footer-title">
+                                Направления
+                            </p>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Дизайн одежды
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Стайлинг
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Бизнес в индустрии моды
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Дизайн
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Исскуство
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-city">
+                            <p class="footer-title">
+                                Города обучения
+                            </p>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Милан
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Флоренция
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Париж
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Лондон
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Майами
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Шанхай
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Шэньчжэнь
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Мумбаи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-programs">
+                            <p class="footer-title">
+                                Программы
+                            </p>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Базовые программы и бакалавриат
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Магистратура
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Одногодичные программы
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Короткие курсы
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Курсы для подростков
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Подготовительные программы
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom f-jcsb-center">
+                        <p class="footer-bottom__text">
+                            Официальное представительство института моды и дизайна Istituto Marangoni в России и в странах бывшего СНГ
+                        </p>
+                        <div class="footer-social f-center">
+                            <a href="" class="footer-social__item f-center-center">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.1299 5.18844L3.85373 9.26923C3.51985 9.38052 3.55694 9.8628 3.89083 9.97409L6.48769 10.7902L7.52643 14.0549C7.60063 14.3146 7.93451 14.3888 8.12 14.2033L9.64102 12.7935L12.5347 14.9081C12.7573 15.0565 13.054 14.9452 13.1282 14.6855L15.1315 6.0788C15.2428 5.44813 14.6864 4.96586 14.1299 5.18844V5.18844ZM8.12 11.4209L7.78612 13.35L7.04416 10.679L14.2783 5.9304L8.12 11.4209Z" fill="white"/>
+                                </svg>                                        
+                            </a>
+                            <a href="" class="footer-social__item f-center-center">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.66137 5.28362C9.67373 3.79351 8.40467 2.42758 6.83264 2.23849C6.79867 2.23425 6.76483 2.22909 6.73114 2.22303C6.65211 2.2079 6.57198 2.19928 6.49155 2.19727C6.169 2.19727 6.08295 2.42398 6.06028 2.55846C6.03813 2.68985 6.05925 2.80062 6.12263 2.88667C6.22928 3.03146 6.41735 3.05722 6.56832 3.07783C6.61211 3.08401 6.65385 3.08968 6.68889 3.09741C8.1017 3.41326 8.57728 3.90944 8.80966 5.31041C8.81532 5.34442 8.8179 5.38667 8.82099 5.43149C8.8313 5.59895 8.85191 5.94726 9.22649 5.94726C9.25741 5.94726 9.29142 5.94468 9.32645 5.93953C9.67476 5.88646 9.66394 5.56803 9.65879 5.415C9.65724 5.37172 9.6557 5.33102 9.65982 5.30371C9.66064 5.29687 9.66098 5.28999 9.66085 5.2831L9.66137 5.28362Z" fill="white"/>
+                                    <path d="M6.39987 1.69158C6.44212 1.69467 6.48128 1.69777 6.51426 1.7024C8.83443 2.05947 9.90151 3.1585 10.1968 5.49671C10.2019 5.53638 10.2029 5.58482 10.2034 5.63582C10.2065 5.81874 10.2127 6.19899 10.6208 6.20672H10.6332C10.7615 6.20672 10.863 6.16808 10.9361 6.09182C11.0629 5.9594 11.0546 5.76206 11.0469 5.60336C11.0454 5.5642 11.0438 5.52762 11.0438 5.49516C11.0737 3.1044 9.00343 0.93571 6.61473 0.855331C6.60443 0.855331 6.59515 0.855331 6.58588 0.856877C6.57648 0.858063 6.56701 0.858579 6.55754 0.858423C6.53332 0.858423 6.50447 0.856362 6.47304 0.854301C6.43594 0.851724 6.39317 0.848633 6.34938 0.848633C5.96912 0.848633 5.89699 1.11914 5.88771 1.28041C5.86659 1.65294 6.22675 1.67922 6.39987 1.69158V1.69158ZM10.0849 8.51865C10.0352 8.48081 9.98587 8.44233 9.93707 8.40323C9.68356 8.1992 9.41409 8.01164 9.15388 7.82976L8.99158 7.71641C8.6577 7.48197 8.35782 7.3681 8.07443 7.3681C7.69212 7.3681 7.35927 7.57935 7.08412 7.99516C6.96252 8.17962 6.81465 8.26927 6.63276 8.26927C6.50644 8.26485 6.38247 8.23377 6.269 8.17807C5.19212 7.68961 4.42234 6.94044 3.98232 5.95167C3.76952 5.47352 3.83856 5.16128 4.21263 4.90675C4.42543 4.76248 4.82063 4.49403 4.79332 3.97929C4.76137 3.39552 3.47273 1.638 2.92966 1.43859C2.6975 1.35391 2.44301 1.35318 2.21037 1.43653C1.5864 1.64624 1.13916 2.01516 0.91503 2.50207C0.698625 2.97301 0.70893 3.52587 0.942853 4.10089C1.62041 5.76361 2.57259 7.21352 3.77364 8.40993C4.94893 9.5811 6.39369 10.54 8.06722 11.2608C8.21819 11.3257 8.37637 11.3613 8.4923 11.387C8.53146 11.3958 8.56547 11.4035 8.5902 11.4102C8.60381 11.4139 8.61784 11.4158 8.63194 11.4159H8.64533C9.43264 11.4159 10.3781 10.6966 10.6682 9.87685C10.9227 9.15859 10.458 8.80358 10.0849 8.51865V8.51865ZM6.74818 3.59131C6.6137 3.5944 6.33289 3.60162 6.23448 3.88706C6.1881 4.02103 6.19377 4.13645 6.25096 4.23177C6.33443 4.37088 6.49468 4.41417 6.63998 4.43787C7.16811 4.52237 7.43965 4.814 7.49375 5.35656C7.519 5.60903 7.68954 5.78576 7.90749 5.78576C7.92403 5.78574 7.94055 5.78471 7.95696 5.78267C8.21974 5.75176 8.347 5.55854 8.33567 5.20868C8.33979 4.84388 8.14915 4.42962 7.82402 4.09986C7.49838 3.76907 7.10576 3.58255 6.74818 3.59131V3.59131Z" fill="white"/>
+                                </svg>                                                                                                                
+                            </a>
+                            <a href="" class="footer-social__item f-center-center">
+                                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5309 16.7503C23.0744 16.2931 22.5314 15.9306 21.9332 15.6838C21.335 15.437 20.6936 15.3108 20.0461 15.3125C17.3318 15.3125 15.1203 17.5119 15.1203 20.214C15.1183 21.0744 15.345 21.92 15.7774 22.6649L15.0791 25.2053L17.6908 24.5225C18.413 24.9141 19.2221 25.1197 20.0445 25.1204H20.0465C22.7613 25.1204 24.9703 22.9214 24.9719 20.2173C24.9719 18.9079 24.46 17.6769 23.5309 16.7499V16.7503ZM20.0461 24.2919H20.0445C19.3114 24.2919 18.5918 24.0959 17.9608 23.7244L17.8112 23.6362L16.2605 24.0404L16.6743 22.5365L16.5779 22.3826C16.1676 21.7331 15.9503 20.9812 15.9513 20.214C15.9513 17.9686 17.7885 16.1414 20.0478 16.1414C20.5854 16.1401 21.1181 16.2449 21.6147 16.4499C22.1114 16.6548 22.5624 16.9558 22.9414 17.3355C23.3223 17.7133 23.6243 18.1625 23.8298 18.6571C24.0353 19.1517 24.1404 19.682 24.1389 20.2173C24.1389 22.4647 22.3017 24.2919 20.0457 24.2919H20.0461ZM22.2905 21.2398C22.1681 21.1791 21.5626 20.8828 21.4501 20.8426C21.3375 20.8008 21.2551 20.7815 21.1731 20.9033C21.0906 21.0264 20.8557 21.3026 20.7835 21.3843C20.7126 21.4643 20.6401 21.4758 20.5177 21.4146C20.394 21.3539 19.9979 21.2238 19.5276 20.8057C19.1619 20.4815 18.9142 20.0794 18.8433 19.9575C18.7708 19.8344 18.8351 19.7688 18.8965 19.7072C18.9525 19.6531 19.0201 19.5648 19.0816 19.4926C19.1426 19.4224 19.164 19.3712 19.2052 19.2891C19.2456 19.2074 19.225 19.1352 19.1941 19.0745C19.1636 19.0137 18.9175 18.4093 18.8145 18.1639C18.7143 17.9251 18.6129 17.9588 18.5375 17.9543C18.4666 17.951 18.3845 17.951 18.3025 17.951C18.2201 17.951 18.0865 17.9813 17.9736 18.1049C17.861 18.2267 17.5436 18.5234 17.5436 19.1258C17.5436 19.7286 17.9847 20.3116 18.0465 20.3937C18.1075 20.4737 18.9142 21.7109 20.1488 22.2419C20.3775 22.3403 20.6114 22.4265 20.8495 22.5C21.1442 22.5927 21.413 22.58 21.6257 22.5492C21.8623 22.5143 22.3532 22.2529 22.4563 21.9661C22.5581 21.6809 22.5581 21.4356 22.5271 21.3843C22.4966 21.333 22.4146 21.3022 22.2905 21.2398V21.2398Z" fill="white"/>
+                                </svg>                                                                              
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery Validation -->
+        <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+        <!-- Marquee -->
+        <script src="bower_components/jquery.marquee/jquery.marquee.min.js"></script>
+        <!-- Fancybox -->
+        <script src="bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+        <!-- app js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
