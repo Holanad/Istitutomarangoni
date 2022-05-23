@@ -112,6 +112,7 @@
         margin-right: 20px;
     }
     &-select {
+        z-index: 1;
         position: absolute;
         left: 0;
         top: 47px;
@@ -153,7 +154,7 @@
 // form together select
 .select-form {
     &-elem {
-        width: 100%;
+        width: 257px;
         position: relative;
         &::after {
             content: '▼';

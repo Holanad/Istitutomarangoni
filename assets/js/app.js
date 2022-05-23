@@ -1,11 +1,9 @@
-// Ленивая загрузка
-//var myLazyLoad = new LazyLoad();
+/* Переменные */
+let sizeWindow = $(window).width();
 
-// Swiper slider Teacher
-const teacher = new Swiper(".teacher-slider", {
-    slidesPerView: "auto",
-    freeMode: true,
-});
+// Ленивая загрузка
+var myLazyLoad = new LazyLoad();
+
 // Swiper slider RECALL
 const swiper = new Swiper(".recall-slider", {
     navigation: {
@@ -18,7 +16,27 @@ const swiper = new Swiper(".recall-slider", {
         el: ".swiper-scrollbar",
         type: "progressbar",
     },
+    breakpoints: {
+        768: {
+            grid: {
+                rows: 1,
+            },
+        },
+        576: {
+            spaceBetween: 30,
+            grid: {
+                rows: 3,
+            },
+        },
+        320: {
+            spaceBetween: 10,
+            grid: {
+                rows: 3,
+            },
+        },
+    }
 });
+
 const sliderRecall = () => {
     let countSlide = document.querySelectorAll('.recall-item').length;
     let recallItemCount = document.querySelector('.recall-item-count');
@@ -35,48 +53,69 @@ const sliderRecall = () => {
 sliderRecall();
 //----------------------//
 
-/*function scrollTeacher () {
-    let activateAnimation = true;
-    const teacherBlockElem = document.querySelector('.teacher-block');
-    const teacherItemElem = document.querySelectorAll('.teacher-item');
-    
-    function teacherAmination () {
-        if (activateAnimation === true) {
-            function cyrcleTeacher () {
-                for (let i = 0; i < teacherItemElem.length; i++) {
-                    setTimeout(function timer() {
-                        if(teacherItemElem[i].previousElementSibling == null) {
-                            teacherItemElem[i].classList.add('active');
-                            let lastItemElem = teacherBlockElem.lastChild.previousSibling;
-                            lastItemElem.classList.remove('active');
-                        } else {
-                            teacherItemElem[i].previousElementSibling.classList.remove('active');
-                            teacherItemElem[i].classList.add('active');
-                            teacherItemElem[i].previousElementSibling.classList.remove('active');
-                        }
-                    }, i * 3000);
-                }
-            }
-            cyrcleTeacher();
-            setInterval(function() {
-                cyrcleTeacher();
-            },teacherItemElem.length * 300);
-        } else {
-            console.log('22')
-        }
-    }
-    teacherAmination();
-   /* teacherItemElem.forEach(e => {
-        e.addEventListener('mouseover', () => {
-            activateAnimation = false;
-        })
-    })*/
-/*}
-scrollTeacher();*/
-
 
 // jQuery function
 $(document).ready(function() {
+    // heightSteps
+    function stepsAdaptive () {
+        if (sizeWindow <= 768) {
+            let stepsListHeight = $('.steps-list').height();
+            $('.steps-content').css("height", stepsListHeight);
+        }
+    };
+    stepsAdaptive();
+
+    // heightSteps
+    function postsAdaptive () {
+        if (sizeWindow <= 576) {
+            let stepsListHeight = $('.post-saidbar').height();
+            $('.saidbar').css("height", stepsListHeight);
+        }
+    };
+    postsAdaptive();
+
+    // heightBlockCity 
+    function cityBlock () {
+        function cityImage () {
+            if (sizeWindow <= 992 && sizeWindow > 768) {
+                let cityTitleHeight = $('.city__title').height();
+                $('.city-image-poster').css("top", cityTitleHeight + 120 + 57);
+            }
+            if (sizeWindow <= 768 && sizeWindow > 576) {
+                let cityTitleHeight = $('.city__title').height();
+                $('.city-image-poster').css("top", cityTitleHeight + 90 + 39);
+            }
+            if (sizeWindow < 576) {
+                let cityTitleHeight = $('.city__title').height();
+                $('.city-image-poster').css("top", cityTitleHeight + 90 + 32);
+            }
+        };
+
+        function singleCityImage () {
+            if (sizeWindow <= 992 && sizeWindow > 768) {
+                let cityTitleHeight = $('.city__title').height();
+                $('.city-video').css("top", cityTitleHeight + 57);
+            }
+            if (sizeWindow <= 768 && sizeWindow > 576) {
+                let cityTitleHeight = $('.city__title').height();
+                $('.city-video').css("top", cityTitleHeight + 39);
+            }
+            if (sizeWindow < 576) {
+                let cityTitleHeight = $('.city__title').height();
+                $('.city-video').css("top", cityTitleHeight + 32);
+            }
+        };
+        cityImage();
+        singleCityImage();
+    }
+    cityBlock();
+
+    $(window).on('load resize', function() {
+        stepsAdaptive();
+        cityBlock();
+        postsAdaptive();
+    });
+
     // dataSelects
     function dataSelects () {
         function newsSelect () {      
@@ -112,6 +151,7 @@ $(document).ready(function() {
             });
         }
         recallSelectCity();
+
         function recallSelectEducation () {      
             $('.recall-filter__btn-education').click(function (e) {
                 let inputNews = $('.recall-filter__input-education');
@@ -128,6 +168,7 @@ $(document).ready(function() {
             });
         }
         recallSelectEducation();
+
         function recallSelectDirection () {      
             $('.recall-filter__btn-direction').click(function (e) {
                 let inputNews = $('.recall-filter__input-direction');
@@ -146,6 +187,7 @@ $(document).ready(function() {
         recallSelectDirection();
     }
     dataSelects();
+
     // accordion
     function accordion() {
         $(".price-item-head").click(function(){
@@ -154,6 +196,14 @@ $(document).ready(function() {
         });
     };
     accordion();
+    // accordion header
+    function accordionHeader() {
+        $(".header-mobile-item__title").click(function(){
+            $(this).toggleClass("open").next().slideToggle();
+            $(".header-mobile-item__title").not(this).removeClass("open").next().slideUp();
+        });
+    };
+    accordionHeader();
     // activeSelect
     function activeSelect () {
         $(".select-form-elem__select").each(function() {
@@ -173,8 +223,7 @@ $(document).ready(function() {
     function headerBurger (){
         $('.header-burger').click(function () {
         $('.header-burger').toggleClass('active');
-        $('.header-mobile').toggleClass('active ');
-        $('html').toggleClass('hidden');
+        $('.header-mobile').toggleClass('active');
         });
     };
     headerBurger();
@@ -194,7 +243,6 @@ $(document).ready(function() {
             $(window).on('load resize', function() {
                 navAbsolute();
             });
-
             function navAbsolute() {
                 let sectionWidth = $('.recall').width();
                 let contWidth = $('.recall .container').width();
@@ -214,9 +262,9 @@ $(document).ready(function() {
           $('.teacher-slider').marquee({
               direction: 'left',
               duplicated: true,
-              duration: 10000,
+              duration: 20000,
               pauseOnHover: true,
-              gap: 30,
+              gap: 20,
               delayBeforeStart: 0,
               startVisible: true,
           });
@@ -246,7 +294,31 @@ $(document).ready(function() {
     }
     checkboxForm();
 
-
+    // Закрытие модального окна
+    function closeModal() {
+        $('.popup-close').click(function() {
+        $('html').removeClass('blocking');
+        $('.duty').removeClass('open');
+        });
+        $(document).mouseup(function (e) {
+        var container = $(".crop");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $('html').removeClass('blocking');
+            $('.duty').removeClass('open');
+        }
+        });
+    };
+    closeModal();
+       
+    // Модалка на контактах   
+    function modal() { 
+        $('.modal').click(function (e) {
+            e.preventDefault();
+            $('.popup').addClass('open');
+            $('html').addClass('hidden');
+        })
+    }
+    modal();
     //Валидации сайта
     function formValidate() {
         $('.question-form').validate({
@@ -270,6 +342,36 @@ $(document).ready(function() {
                     minlength: "Должно быть не менее: 2 символов"
                 },
                 email: {
+                    required: "Заполните поле",
+                    minlength: "Должно быть не менее: 5 символов"
+                },
+                phone: {
+                    required: "Заполните поле",
+                    minlength: "Должно быть не менее: 5 символов"
+                }
+            }
+        });
+        $('.popup-form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                comment: {
+                    required: true,
+                    minlength: 5
+                },
+                phone: {
+                    required: true,
+                    minlength: 5
+                }
+            },
+            messages: {
+                name: {
+                    required: "Заполните поле",
+                    minlength: "Должно быть не менее: 2 символов"
+                },
+                comment: {
                     required: "Заполните поле",
                     minlength: "Должно быть не менее: 5 символов"
                 },

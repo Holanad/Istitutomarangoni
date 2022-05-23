@@ -163,7 +163,7 @@
                     <div class="post-inner f-jcsb">
                         <div class="post-main">
                             <div class="post-main-image">
-                                <img src="assets/img/news/img-one.jpg" alt="" class="img-cover">
+                                <img data-src="assets/img/news/img-one.jpg" alt="" class="img-cover lazy">
                             </div>
                             <p class="post-main__text">
                                 Вступительные требования отличаются в зависимости от программы и страны. В ряде случаев нужно иметь портфолио, сертификат о владении языком или 12-летнее среднее образование. Очень важно четко ответить на вопросы анкеты и написать живое мотивационное письмо: формальный подход к этим документам может стать причиной отказа. А при подготовке портфолио следует учитывать критерии оценки и форму подачи.
@@ -223,41 +223,43 @@
                                 </div>
                             </div>
                         </div>
-                        <aside class="post-saidbar f-dc">
-                            <a href="" class="post-saidbar-link">
-                                <div class="post-saidbar-link-image">
-                                    <img src="assets/img/news/post/img.jpg" alt="" class="img-cover">
-                                </div>
-                                <h2 class="post-saidbar-link__title">
-                                    Заголовок новости
-                                </h2>
-                                <span class="post-saidbar-link__date">
-                                    25.01.2022
-                                </span>
-                            </a>
-                            <a href="" class="post-saidbar-link">
-                                <div class="post-saidbar-link-image">
-                                    <img src="assets/img/news/post/img.jpg" alt="" class="img-cover">
-                                </div>
-                                <h2 class="post-saidbar-link__title">
-                                    Заголовок новости
-                                </h2>
-                                <span class="post-saidbar-link__date">
-                                    25.01.2022
-                                </span>
-                            </a>
-                            <a href="" class="post-saidbar-link">
-                                <div class="post-saidbar-link-image">
-                                    <img src="assets/img/news/post/img.jpg" alt="" class="img-cover">
-                                </div>
-                                <h2 class="post-saidbar-link__title">
-                                    Заголовок новости
-                                </h2>
-                                <span class="post-saidbar-link__date">
-                                    25.01.2022
-                                </span>
-                            </a>
-                        </aside>
+                        <div class="saidbar">
+                            <aside class="post-saidbar f-dc">
+                                <a href="" class="post-saidbar-link">
+                                    <div class="post-saidbar-link-image">
+                                        <img data-src="assets/img/news/post/img.jpg" alt="" class="img-cover lazy">
+                                    </div>
+                                    <h2 class="post-saidbar-link__title">
+                                        Заголовок новости
+                                    </h2>
+                                    <span class="post-saidbar-link__date">
+                                        25.01.2022
+                                    </span>
+                                </a>
+                                <a href="" class="post-saidbar-link">
+                                    <div class="post-saidbar-link-image">
+                                        <img data-src="assets/img/news/post/img.jpg" alt="" class="img-cover lazy">
+                                    </div>
+                                    <h2 class="post-saidbar-link__title">
+                                        Заголовок новости
+                                    </h2>
+                                    <span class="post-saidbar-link__date">
+                                        25.01.2022
+                                    </span>
+                                </a>
+                                <a href="" class="post-saidbar-link">
+                                    <div class="post-saidbar-link-image">
+                                        <img data-src="assets/img/news/post/img.jpg" alt="" class="img-cover lazy">
+                                    </div>
+                                    <h2 class="post-saidbar-link__title">
+                                        Заголовок новости
+                                    </h2>
+                                    <span class="post-saidbar-link__date">
+                                        25.01.2022
+                                    </span>
+                                </a>
+                            </aside>
+                        </div>
                     </div>
                 </div>
                 <div class="post-elem post-elem-one bg-elem">
@@ -275,7 +277,7 @@
                 <div class="container">
                     <div class="question-wrapper f-jcsb">
                         <div class="question-image">
-                            <img src="assets/img/question/img.png" alt="" class="img-cover">
+                            <img data-src="assets/img/question/img.png" alt="" class="img-cover lazy">
                         </div>
                         <div class="question-block">
                             <h2 class="question__title title">
@@ -522,6 +524,8 @@
         <script src="bower_components/jquery.marquee/jquery.marquee.min.js"></script>
         <!-- Fancybox -->
         <script src="bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+        <!-- Lazy --> 
+        <script src="assets/js/lazyload.min.js"></script>
         <!-- app js -->
         <script src="assets/js/app.js"></script>
     </body>
